@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Josias Victor</title>
+    <meta name="description" content="Entre em contato - JOSIAS VICTOR">
+    <meta name="author" content="Josias Victor">
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--Aqui eu inseri algumas metas tags para indicar quem é o autor, e uma breve descrição da pagina, alem das tags padrão-->
+
+<body>
+    <header> <!--Topo da pagina (vai estar presente em todas as paginas)-->
+        <a href="index.html" class="logo">JOSIAS VICTOR</a>
+        <nav id="menu">
+            <a href="sobremim.html" class="menu">Sobre mim</a>
+            <a href="formacao.html" class="menu">Formação</a>
+            <a href="portfolio.html" class="menu">Meu portfólio</a>
+            <a href="contato.html" class="menu selected">Contato</a>
+            <a href="index.html" class="menu">Início</a>
+            <ul id="vertical">
+                <li><a href="sobremim.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Meu portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Entre em Contato</h1>
+
+        <section id="texto-contato"> <!--Aqui eu defini um ID pois precisei mexer apenas nisso separado-->
+            <p>Se você deseja conversar sobre oportunidades na área de tecnologia, trocar ideias ou tirar dúvidas, fique
+                vontade para me enviar uma mensagem. <br>Estou sempre aberto a novos contatos profissionais e pronto
+                para
+                colaborar em projetos desafiadores. Preencha o formulário abaixo e responderei o mais breve possível.
+            </p>
+            <form type="post"> <!--abertura de formulario,, do tipo Post-->
+                <label for="campo-nome">Nome:</label>
+                <input id="campo-nome" type="text" placeholder="Digite seu nome" required><br><br>
+
+                <label for="campo-email">E-mail:</label>
+                <input id="campo-email" type="email" placeholder="Digite seu e-mail" required><br><br>
+
+                <label for="campo-assunto">Assunto:</label>
+                <input id="campo-assunto" type="text" placeholder="Assunto" required><br><br>
+                <label for="campo-mensagem" id="mensagem">Mensagem:</label><br>
+                <textarea rows="15" cols="50" placeholder="Digite sua mensagem" required></textarea><br><br>
+                <input type="submit" id="enviar">
+            </form> <!--fechamento do formulario-->
+            <p>Ou, se preferir, entre em contato diretamente pelas minhas redes sociais:</p>
+        </section>
+        <section class="links">
+            <!--defini uma classe em especial pra essa seção, pois ia precisar. Adicionei imagens clicaveis que levam pras paginas com seus icones. Ex: Icone de instagram, leva pro meu instagram etc...-->
+            <a href="https://www.instagram.com/josiasvictorr/?igsh=eGd3eDIyaWpiN3Vs" target="_blank"><img
+                    src="imagens/instagram.png"></a>
+            <!--Coloquei target="blank" pro usuario conseguir abrir o link sem sair da minha pagina-->
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/josias-victor-correa-neto-798272368" target="_blank"><img
+                    src="imagens/linkedin.png"></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/josiasvictorr" target="_blank"><img src="imagens/github.png"></a>
+        </section>
+        <footer> <!--rodape presente em todas as paginas-->
+            Josias Victor &copy; 2025 &mdash; Todos os direitos reservados
+        </footer>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <meta name="description" content="portfólio - JOSIAS VICTOR">
+    <meta name="author" content="Josias Victor">
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--Aqui eu inseri algumas metas tags para indicar quem é o autor, e uma breve descrição da pagina, alem das tags padrão-->
+
+<body>
+    <header><!--Topo da pagina (vai estar presente em todas as paginas)-->
+        <a href="index.html" class="logo">JOSIAS VICTOR</a>
+        <nav id="menu">
+            <a href="sobremim.html" class="menu">Sobre mim</a>
+            <a href="formacao.html" class="menu">Formação</a>
+            <a href="portfolio.html" class="menu selected">Meu portfólio</a>
+            <a href="contato.html" class="menu">Contato</a>
+            <a href="index.html" class="menu">Início</a>
+            <ul id="vertical">
+                <li><a href="sobremim.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Meu portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Meu portfólio</h1><!--tema da pagina-->
+        <div class="portfolio"><!--aqui, diferente das outras paginas, criei um container para colocar alguns cards-->
+            <section class="card">
+                <!--criei sections para fazer os cards, mas também poderiam ser articles, usei section pois no CSS já estão estilizadas-->
+                <h3>GameGroove</h3>
+                <h5>(Em desenvolvimento)</h5>
+                <img src="imagens/sitedegames.png">
+                <p>Um site de games repleto de notícias, recomendações e muito mais!</p>
+                <span class="status">Em breve</span>
+            </section>
+            <section class="card">
+                <h3>Site pessoal</h3>
+                <img src="imagens/primeirosite.png">
+                <p>Meu primeiro projeto! Um site simples sobre mim, para expor minha trajetória e aprendizados dentro da
+                    Engenharia de Software!</p>
+                <a href="index.html" target="_blank" class="botao">Acessar</a>
+            </section>
+
+            <section class="card">
+                <h3></h3>
+                <!--por se tratar de um projeto que será lançado em breve, apenas criei a estrutura em html pra depois utilizar-->
+                <img src="imagens/embreve.jpg">
+                <p>Estamos trabalhando em um novo projeto, aguarde, em breve traremos novidades!</p>
+                <span class="status">Em breve</span>
+            </section>
+        </div>
+        <footer>Josias Victor &copy; 2025 &mdash; Todos os direitos reservados</footer>
+
+    </main>
+</body>
+
+</html>
